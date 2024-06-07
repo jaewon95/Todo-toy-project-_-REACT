@@ -1,0 +1,14 @@
+.delete-button {
+    margin-left: 10px;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+  
+li:hover .delete-button {
+    opacity: 1;
+}

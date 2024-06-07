@@ -1,0 +1,9 @@
+
+* {
+  overflow-y: hidden;
+}
+
+.container {
+  display: flex;
+}
+

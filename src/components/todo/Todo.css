@@ -1,0 +1,116 @@
+.todo-area {
+    margin-top: 50px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.todo-input-form {
+
+    display: flex;
+    justify-items: center;
+
+    > input {
+        height: 50px;
+        width: 400px;
+        border-radius: 20px;
+        border: 1px solid gray;
+        padding: 10px;
+        font-size: large;
+    }
+
+    > button {
+        cursor: pointer;
+        margin-left: 10px;
+        font-size: 2em;
+        border-radius: 50%;
+        background-color: transparent;
+        border: none;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+.todo {
+    display: flex;
+    
+    > .todo-list {
+        display: flex;
+        flex-direction: column;
+        min-width: 500px;
+        max-width: 500px;
+        
+        li {
+            display: flex;
+            justify-content: center;
+            gap: 10px;      
+            
+            > p {
+                margin: 0px;
+                flex: 1;
+            }
+
+            > input {
+                width: 20px;
+                height: 20px;
+            }
+
+            > button {
+                width: 50px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                margin-right: 10px;
+                background-color: transparent;
+            }
+        }
+    }
+
+    > .todo-update {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        
+        input {
+            padding: 5px;
+            margin: 10px;
+            margin-top: 30px;
+            height: 30px;
+        }
+
+        > .todo-update-btn {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+
+            button {
+                padding: 1rem;
+                font-size: large;
+                width: 140px;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+            }
+        }  
+    }
+
+    > .todo-update-area {
+        
+        background-color: antiquewhite;
+        flex: 1;
+        height: 100vh;
+        background-color: #baf6d4;
+        border-radius: 20px;
+        overflow: hidden;
+        transform: translateY(100%);
+        transition: transform 0.5s ease-out;
+    }
+
+    .todo-update-area.show {
+        
+        transform: translateY(0);
+    }
+}
+

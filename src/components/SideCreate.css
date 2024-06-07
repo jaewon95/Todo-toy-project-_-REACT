@@ -1,0 +1,32 @@
+
+.side-create-form {
+    
+    margin-top: 50px;
+    padding: 100px;
+    
+    display: flex;
+    flex-direction: column;
+
+    > div {
+        display: flex;
+        justify-items: center;
+    }
+
+    > div > input {
+        
+        height: 50px;
+        width: 400px;
+        border-radius: 20px;
+        border: 1px solid gray;
+        padding: 10px;
+        font-size: large;
+    }
+
+    > div > button {
+        flex: 1;
+        font-size: x-large;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
